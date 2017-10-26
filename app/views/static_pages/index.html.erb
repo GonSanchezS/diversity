@@ -2,12 +2,28 @@
   <div class="columns text-center">
     <div class="column col-xs-12 col-xl-6 col-mx-auto">   
       <h1 class="main--title">Diversity in fast-growing technology companies</h1>
-      <p class="main--description">We looked into gender and race diversity in 150 top growing technology companies like Buffer. Here's what we found.</p>
+      <p class="main--description">We looked into gender and race diversity in 150 top growing technology companies like <span id="companies" class="label">Buffer</span>.</p>
       <a class="btn btn-primary">See the rankings</a>
       <a class="btn">Download raw data</a>
     </div>
   </div>
 
+  <script>
+
+var text = ["Mattermark", "Zapier", "Doist", "Airtable", "Bonsai", "Gusto", "AdEspresso"];
+var counter = 0;
+var elem = document.getElementById("companies");
+setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
+
+</script>
 
     <div class="clearfix"/>
 
