@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-color: #f8f9fa !important;
+}
+
+footer {
+  background-color: white;
+  width: 100% !important;
+  margin-top: 60px;
+  padding-top: 22px;
+  height: 70px;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.hero {
+  margin-top: 30px;
+}
+
+.main--description {
+  margin-bottom: 40px !important;
+}
+
+.container {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  width: 100%;
+}
+
+.company--profile--card {
+  border-radius: 3px;
+  padding: 20px !important;
+  padding-top: 17px !important;
+  background-color: white;
+}
+
+/*
+
+.company--profile--card:hover {
+  border: 2px solid #5755d9;
+}
+
+*/
+
+.company--profile {
+  padding: 10px;
+}
+
+.main--title {
+  margin-top: 50px;
+}
+
+.company--section {
+  margin-top: 70px;
+  background-color: #f8f9fa;
+}
+
+.company--link {
+  float:left;
+  font-size: 12px;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.company--link:hover {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.tag--size {
+  background-color: #dfdfdf;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.tag--remote {
+  background-color: #000;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.company--title {
+  float: left;
+}
+
+.company--rank {
+  float: right;
+  font-size: 13px;
+  color: #dfdfdf;
+}
+
+.company--score {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+  line-height: 30px; 
+  margin-bottom: 5px !important;
+}
+
+.company--score--icon {
+  float: left;
+  font-size: 30px;
+  margin-right: 8px;
+
+}
+
+.company--score--description {
+  font-size: 9px;
+  color: #dfdfdf;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 13px !important;
+}

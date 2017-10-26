@@ -5,10 +5,36 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
 </head>
 <body>
 
+<div class="container">
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a href="#" class="btn btn-link">Rankings</a>
+    <a href="#" class="btn btn-link">Raw Data</a>
+  </section>
+  <section class="navbar-center">
+    <a href="#" class="navbar-brand mr-2">diversity.xyz</a>
+  </section>
+  <section class="navbar-section">
+    <a href="#" class="btn btn-link">About</a>
+    <a href="#" class="btn btn-link">Twitter</a>
+  </section>
+</header>
+</div>
+  
 <%= yield %>
+
+  <footer class="section section-footer">
+    <div id="copyright" class="grid-footer container">
+      <p class="text-center">Designed and built with ♥ by <a href="https://twitter.com/gonsanchezs" target="_blank">Gonz</a>.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
