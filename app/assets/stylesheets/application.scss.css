@@ -18,6 +18,7 @@ body {
   background-color: #f8f9fa !important;
 }
 
+
 footer {
   background-color: white;
   width: 100% !important;
@@ -89,7 +90,7 @@ footer {
   color: white;
   padding: 5px;
   border-radius: 3px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   margin-right: 5px;
 }
@@ -99,7 +100,7 @@ footer {
   color: white;
   padding: 5px;
   border-radius: 3px;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -128,6 +129,7 @@ footer {
   margin-right: 8px;
 
 }
+
 
 .company--score--description {
   font-size: 9px;
