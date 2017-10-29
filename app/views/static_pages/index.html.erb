@@ -1,17 +1,17 @@
 <div class="container hero">
   <div class="columns text-center">
-    <div class="column col-xs-12 col-xl-6 col-mx-auto">   
+    <div class="column col-xs-12 col-lg-6 col-xl-6 col-mx-auto">   
       <h1 class="main--title">Diversity in fast-growing technology companies</h1>
       <p class="main--description">We looked into gender and race diversity in 150 top growing technology companies like <span id="companies" class="label">Buffer</span>.</p>
       <a class="btn btn-primary">See the rankings</a>
-      <a href="https://airtable.com/invite/l?inviteId=invFcqQ0afo9VfuKj&inviteToken=d125c8ed26505f8bc339c08b3374d0d0" class="btn">Download raw data</a>
+      <a href="https://airtable.com/invite/l?inviteId=invFcqQ0afo9VfuKj&inviteToken=d125c8ed26505f8bc339c08b3374d0d0" class="btn">Checkout findings</a>
     </div>
   </div>
 
 
   <script>
 
-var text = ["Mattermark", "Zapier", "Doist", "Airtable", "Bonsai", "Gusto", "AdEspresso"];
+var text = ["Mattermark", "Zapier", "Doist", "Airtable", "Bonsai", "Gusto", "AdEspresso", "Buffer"];
 var counter = 0;
 var elem = document.getElementById("companies");
 setInterval(change, 1000);
@@ -32,14 +32,15 @@ function change() {
 
         <div class="column col-xl-3 col-lg-4 col-md-6 col-xs-12 company--profile">   
           <div class="company--profile--card">
+            <!--<img src="//logo.clearbit.com/{{b}}?size=19" class="logo"> -->
             <h5 class="company--title">{{company}}</h5>
             <a href="{{url}}" class="company--link">🔗</a>
             <p class="company--rank">#{{ranking}}</p>
             <div class="clearfix"></div>
 
             <div class="columns">
-              <div class="column col-xs-4"><p class="company--score--icon">👩‍👧‍👧</p><p class="company--score">{{gender}}</p><p class="company--score--description">Gender</p></div>
-              <div class="column col-xs-6"><p class="company--score--icon">👩‍👧‍👧</p><p class="company--score">{{race}}</p><p class="company--score--description">Race</p></div>
+              <div class="column col-xs-4"><p class="company--score--icon">👩‍👧‍👧</p><p class="company--score">{{gender}}</p><p class="company--score--description">Gender Ratio</p></div>
+              <div class="column col-xs-6"><p class="company--score--icon">👩‍👧‍👧</p><p class="company--score">{{race}}</p><p class="company--score--description">Race Ratio</p></div>
             </div>
             <div class="clearfix"></div>
             <span class="tag--size">{{size}}</span><span class="tag--remote">{{remote}}</span>

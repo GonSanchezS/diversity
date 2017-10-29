@@ -1,14 +1,19 @@
 <div class="container hero">
   <div class="columns text-center">
     <div class="column col-xs-12 col-xl-6 col-mx-auto">   
-      <h3 class="main--title">Curious to check the top companies?</h3>
-      <p class="main--description">Data was collected manually, going through each company's public profile. You are free to do with it whatever you want.</p>
+      <h2 class="main--title">Check the top companies 🏆</h2>
+      <p>First, it's important to understand how Gender Ratio, Race Ratio and the Diversity Score are calculated.</p>
+<code># of male employees / # of female employees = Gender Ratio</cod>
+<code># of caucasian employees / # of black, asian, middle easter and latino employees = Race Ratio</code>
+<code>Gender Ratio + Diversity Ratio = Score</code>
+      <p class="main--description">Given that more equal numbers represent more diversity, the lower the score, the higher the company is in the rankings.</p>
 
+      <h4>Most Diverse Companies</h4>
 
-
+<!-- limit to 20 -->
 
 <div>
-    <table class="table table-striped table-hover">
+  <table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>ranking</th>
@@ -16,6 +21,7 @@
       <th>gender ratio</th>
       <th>race ratio</th>
       <th>total score</th>
+      <th>source</th>
     </tr>
   </thead>
   <tbody sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' sheetsu-sheet='Ranking'>
@@ -23,12 +29,30 @@
       <td>{{ranking}}</td>
       <td>{{company}}</td>
       <td>{{gender}}</td>
-            <td>{{race}}</td>
+      <td>{{race}}</td>
       <td>{{score}}</td>
+      <td><a href="{{source}}">View the source</a></td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
+      <h4>Most Diverse Non-Remote Companies</h4>
+      <h4>Most Diverse Remote Companies</h4>
+      <h4>Most Diverse Small Companies</h4>
+      <h4>Most Diverse Medium Companies</h4>
+      <h4>Most Diverse Large Companies</h4>
+
+      <!--
+
+        Race in Remote vs. Non Remote
+        Diversity in Remote vs. Non Remote
+
+        use accordeons
+
+      -->
+
 
   <script src='//load.sheetsu.com'></script>
     
