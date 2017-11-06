@@ -5,10 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="spectre.min.css">
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
 
@@ -20,7 +22,7 @@
     <%= link_to 'Ranking', ranking_path, :class => "btn btn-link"  %>
   </section>
   <section class="navbar-center">
-    <%= link_to 'Diversity.xyz', root_path, :class => "navbar-brand mr-2"  %>
+    <%= link_to image_tag("logo.png", height: 25), root_path, :class => "navbar-brand mr-2"  %>
   </section>
   <section class="navbar-section">
     <%= link_to 'Raw Data', data_path, :class => "btn btn-link"  %>
