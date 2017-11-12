@@ -59,7 +59,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-}
+} //
 
 /** Modify default styling of address. */
 address {

@@ -1,22 +1,25 @@
-<div class="container hero">
+<div class="container">
+
+<div class="hero--index">
   <div class="columns text-center" style="margin-bottom: 0px;">
-    <div class="column col-xs-12 col-lg-6 col-xl-8 col-mx-auto">   
+    <div class="column col-xs-12 col-md-12 col-lg-10 col-xl-8 col-mx-auto">   
       <h1 class="main--title">Diversity in technology companies</h1>
-      <p class="main--description">We looked into gender and race diversity in <br/>150 top growing technology companies like <span id="companies" class="label">Buffer</span>.</p>
+      <p class="main--description">We looked into gender and race diversity in 250 fast-growing <br id="mobile-invisible"/> technology companies like <span id="companies" class="label">Buffer</span>.</p>
       <a class="btn btn-primary">See the rankings</a>
       <a href="https://airtable.com/invite/l?inviteId=invFcqQ0afo9VfuKj&inviteToken=d125c8ed26505f8bc339c08b3374d0d0" class="btn">Checkout findings</a>
     </div>
   </div>
 
-  <div><%= image_tag('hero-1488x690.png', class: "img-responsive main--image")%></div>
+</div>
 
+<!--  <div><%= image_tag('hero-1488x690.png', class: "img-responsive main--image")%></div>  -->
 
   <script>
 
 var text = ["Mattermark", "Zapier", "Doist", "Airtable", "Bonsai", "Gusto", "AdEspresso", "Buffer"];
 var counter = 0;
 var elem = document.getElementById("companies");
-setInterval(change, 1000);
+setInterval(change, 1500);
 
 function change() {
   elem.innerHTML = text[counter];
