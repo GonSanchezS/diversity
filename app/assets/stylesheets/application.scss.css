@@ -180,4 +180,4 @@ h4 {
   margin-bottom: -120px !important;
 }
 
-@import 'mediaqueries';
+@import 'mediaqueries.less';
