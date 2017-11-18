@@ -1,25 +1,21 @@
 <div class="container hero">
   <div class="columns">
     <div class="column col-xs-12 col-md-10 col-lg-8 col-xl-6 col-mx-auto">   
-      <h2 class="main--title text-center">About Diversity</h2>
+      <h2 class="main--title text-center">About Diversity 0.01</h2>
       <p class="main--paragraph text-large text-center">Diversity explores gender and race diversity in fast growing technology companies.</p>
       <br />
       <h4>How was data collected?</h4>
       <p>Data was collected manually from company team pages or Angellist, and verified once. If you are curious, you can find a link to each company's source in the <%= link_to 'raw data', data_path  %> section.</p>
+      <p>Everything was done with the best intentions, and the upmost respect for every single company in the rankings. If you wish to make a correction or remove your company, let me know.</p>
 
       <h4>How were scores calculated?</h4>
-      <p>First, it's important to understand how Gender Ratio, Race Ratio and the Diversity Score are calculated.</p>
-      <p>
-        <code>male employees / female employees = gender ratio</code><br />
-        <code>caucasian employees / other race employees = race ratio</code><br />
-        <code>gender ratio + race ratio = diversity score</code>
-      </p>
+      <p>Gender and Race scores were calculated using the <a href="https://en.wikipedia.org/wiki/Diversity_index#Simpson_index">Simpson's Diversity Index</a>, which aims to quantify diversity in a single community sample.</p>
 
-      <p>Given that more equal numbers represent more diversity then the lower the score, the higher the company is in the rankings.</p>
+      <p>In practice, that's <code>D = 1 - (Σn(n-1)/N(N-1))</code>, where <code>n = number of individuals of each race/gender</code> in a company and <code>N = total number of individuals</code> in that same company.
 
-      <p>As an example, Buffer has 49 male employees and 22 female employees. Of 71 employees, 56 are caucasian, 1 is black, 5 are hispanic, 5 are asian and 4 are Middle Eastern.</p>
+      <p>The range is from 0 to 1, where high scores (close to 1) indicate high diversity and low scores (close to 0) indicate low diversity. To increase readability, the index was multiplied by 100 to get the score.</p>
 
-      <p>That's a gender ratio of <code>49 / 22 = 2.22</code>, a race ratio of <code>56 / (1 + 5 + 5 + 4) = 3.73</code>. This means their score is <code>2.22 + 3.73 = 5.95</code>.</p>
+      <p>The Diversity Score is simple the average of the Gender Score and the Race Score. Stupidly simple, because I don't know better.</p>
 
       <p>It's far from accurate, but it's a start. If you want to collaborate on the score, <a href="https://twitter.com/gonsanchezs">let me know</a>.</p>
 
@@ -28,7 +24,7 @@
       <p>I'm Argentinean, living in Paris and working for companies in the United States and Australia. Naturally, diveristy in tech is a relevant topic for me. </p>
       <p>As someone who works from home, I was curious about diversity in remote companies vs. non-remote companies. Essentially, are remote companies more diverse?</p>
       <p>That question led me to start collecting some data, and a few weeks later, an 8 hour day-flight and a bunch of coffee later, here we are.</p>
-      <p>By the way, it turns out that remote companies are more diverse.</p>
+      <p>By the way, it turns out that remote companies are exactly as diverse as non-remote companies.</p>
       <h4>By whom?</h4>
       <p>I'm Gonz Sánchez – growth & product guy, but I can also design and code. You can learn more about me <a href="http://gonsanchezs.com" target="_blank">by visiting my personal site</a>, or you can say hi 👋 on <a href="https://twitter.com/gonsanchezs" target="_blank">Twitter</a>.</p>
       <p>In case you are curious, all illustrations 🖌️ were made by the talented <a href="https://dribbble.com/maxialbella" target="_blank">Maxi Albella</a>. When he is not <a href="https://audioboom.com/channels/4927719" target="_blank">traveling and podcasting about it</a>, he might be up for work.</p>

@@ -4,7 +4,7 @@
   <div class="columns text-center" style="margin-bottom: 0px;">
     <div class="column col-xs-12 col-md-12 col-lg-10 col-xl-8 col-mx-auto">   
       <h1 class="main--title">Diversity in technology companies</h1>
-      <p class="main--description">We looked into gender and race diversity in 250 fast-growing <br id="mobile-invisible"/> technology companies like <span id="companies" class="label">Buffer</span>.</p>
+      <p class="main--description">We looked into gender and race diversity in 197 fast-growing <br id="mobile-invisible"/> technology companies like <span id="companies" class="label">Buffer</span>.</p>
 
        <%= link_to 'See the rankings', ranking_path, :class => "btn btn-primary" %>
       <%= link_to 'Checkout findings', findings_path, :class => "btn" %>
@@ -35,22 +35,22 @@ function change() {
 
     <div class="clearfix"/></div>
 
-  <div class="columns company--section" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4'>
+  <div class="columns company--section" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' sheetsu-sheet="Value">
 
         <div class="column col-xl-3 col-lg-4 col-md-6 col-xs-12 company--profile">   
           <div class="company--profile--card">
             <!--<img src="//logo.clearbit.com/{{b}}?size=19" class="logo"> -->
-            <h5 class="company--title">{{company}}</h5>
-            <a href="{{url}}" class="company--link" target="_blank">🔗</a>
-            <p class="company--rank">#{{ranking}}</p>
+            <h5 class="company--title">{{Company}}</h5>
+            <a href="{{Source}}" class="company--link" target="_blank">🔗</a>
+            <p class="company--rank">#{{Ranking}}</p>
             <div class="clearfix"></div>
 
             <div class="columns">
-              <div class="column col-xs-4"><p class="company--score--icon"><%= image_tag('gender-46x46.png', size: '24') %></p><p class="company--score">{{gender}}</p><p class="company--score--description">Gender Ratio</p></div>
-              <div class="column col-xs-6"><p class="company--score--icon"><%= image_tag('race-46x46.png', size: '24' )%></p><p class="company--score">{{race}}</p><p class="company--score--description">Race Ratio</p></div>
+              <div class="column col-xs-4"><p class="company--score--icon"><%= image_tag('gender-46x46.png', size: '24') %></p><p class="company--score">{{Gender Score}}</p><p class="company--score--description">Gender</p></div>
+              <div class="column col-xs-6"><p class="company--score--icon"><%= image_tag('race-46x46.png', size: '24' )%></p><p class="company--score">{{Race Score}}</p><p class="company--score--description">Race</p></div>
             </div>
             <div class="clearfix"></div>
-            <span class="tag--size">{{size}}</span><span class="tag--remote">{{remote}}</span>
+            <span class="tag--remote">{{Location}}</span><span class="tag--size">{{Size}}</span>
           </div>
       </div> 
 
