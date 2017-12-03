@@ -39,53 +39,44 @@ function change() {
 
 </script>
 
-    <div class="clearfix"/></div>
-
-    <div class="container columns">
+<div class="clearfix"/></div>
 
       <div class="column col-xs-12 col-md-12 col-lg-8 col-xl-6 col-mx-auto">
 
-        <div class="card-3">
-
-        <div class="chip">
-          <%= image_tag('gender-46x46.png', size: '24') %><span class="score--name">Gender Score</span>
-</div>
-
-        <div class="chip">
-          <%= image_tag('race-02-46x46.png', size: '24') %>  <span class="score--name">Race Score</span>
-</div>
-
-        <div class="chip">
-          <%= image_tag('race-46x46.png', size: '24') %>  <span class="score--name">Diversity Index</span>
-</div>
-
-</div>
-
-
+        <div class="card-3 hide-xs">
+          <div class="chip">
+            <%= image_tag('gender-46x46.png', size: '24') %><span class="score--name">Gender Score</span>
+          </div>
+          <div class="chip">
+            <%= image_tag('race-02-46x46.png', size: '24') %>  <span class="score--name">Race Score</span>
+          </div>
+          <div class="chip">
+            <%= image_tag('race-46x46.png', size: '24') %>  <span class="score--name">Diversity Index</span>
+          </div>
+        </div>
 
     
-      <div class="column col-xs-12" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' id="london" sheetsu-sheet="Copy of Value"> 
+      <div class="column" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' id="london" sheetsu-sheet="Copy of Value"> 
 
 
         <div class="card-2 tile columns">
 
         <div class="column col-xl-12 top-row">
-<span class="company--rank">#{{Ranking}}</span>
+          <span class="company--rank">#{{Ranking}}</span>
         
           <h5 class="company--title">{{Company}}</h5>
           <a href="{{Source}}" class="company--link" target="_blank">🔗</a>
-
-           <span class="tag--remote">{{Location}}</span><span class="tag--size">{{Size}}</span>
+           <span class="tag--remote hide-xs">{{Location}}</span><span class="tag--size hide-xs">{{Size}}</span>
 
           </div>
 
           <div class="columns column col-xl-12 bottom-row"> 
 
-              <div class="col-xs-4"><%= image_tag('race-46x46.png', size: '20') %></span><span class="company--score">{{Diversity Score}}</span></div>  
+              <div><%= image_tag('race-46x46.png', size: '20') %></span><span class="company--score">{{Diversity Score}}</span></div>  
 
-            <div class="col-xs-4"><%= image_tag('gender-46x46.png', size: '20') %><span class="company--score" style="color: #ffdd87;">{{Gender Score}}</span></div> 
+            <div><%= image_tag('gender-46x46.png', size: '20') %><span class="company--score" style="color: #ffdd87;">{{Gender Score}}</span></div> 
 
-            <div class="col-xs-4"><%= image_tag('race-02-46x46.png', size: '20') %></span><span class="company--score" style="color: #ffdd87;">{{Race Score}}</span></div> 
+            <div><%= image_tag('race-02-46x46.png', size: '20') %></span><span class="company--score" style="color: #ffdd87;">{{Race Score}}</span></div> 
 
 
 
@@ -129,5 +120,4 @@ function change() {
 -->
 
 
-</div>
   <script src='//load.sheetsu.com'></script>
