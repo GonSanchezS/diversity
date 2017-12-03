@@ -4,7 +4,7 @@
   <div class="columns text-center" style="margin-bottom: 0px;">
     <div class="column col-xs-12 col-md-12 col-lg-10 col-xl-8 col-mx-auto">   
       <h1 class="main--title">Diversity in technology companies</h1>
-      <p class="main--description">We looked into gender and race diversity in 197 fast-growing <br id="mobile-invisible"/> technology companies like <span id="companies" class="label">Buffer</span>.</p>
+      <p class="main--description">We looked into gender and race diversity in 200 fast-growing <br id="mobile-invisible"/> technology companies like <span id="companies" class="label">Buffer</span> and scored them from 1 👎 to 100 👍</p>
 
        <%= link_to 'See the rankings', ranking_path, :class => "btn btn-primary" %>
       <%= link_to 'Checkout findings', findings_path, :class => "btn" %>
@@ -14,14 +14,20 @@
 
 </div>
 
-<!--  <div><%= image_tag('hero-1488x690.png', class: "img-responsive main--image")%></div>  -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
 
   <script>
 
 var text = ["Mattermark", "Zapier", "Doist", "Airtable", "Bonsai", "Gusto", "AdEspresso", "Buffer"];
 var counter = 0;
 var elem = document.getElementById("companies");
-setInterval(change, 1500);
+setInterval(change, 1000);
 
 function change() {
   elem.innerHTML = text[counter];
@@ -35,11 +41,76 @@ function change() {
 
     <div class="clearfix"/></div>
 
+    <div class="container columns">
+
+      <div class="column col-xs-12 col-md-12 col-lg-8 col-xl-6 col-mx-auto">
+
+        <div class="card-3">
+
+        <div class="chip">
+          <%= image_tag('gender-46x46.png', size: '24') %><span class="score--name">Gender Score</span>
+</div>
+
+        <div class="chip">
+          <%= image_tag('race-02-46x46.png', size: '24') %>  <span class="score--name">Race Score</span>
+</div>
+
+        <div class="chip">
+          <%= image_tag('race-46x46.png', size: '24') %>  <span class="score--name">Diversity Index</span>
+</div>
+
+</div>
+
+
+
+    
+      <div class="column col-xs-12" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' id="london" sheetsu-sheet="Copy of Value"> 
+
+
+        <div class="card-2 tile columns">
+
+        <div class="column col-xl-12 top-row">
+<span class="company--rank">#{{Ranking}}</span>
+        
+          <h5 class="company--title">{{Company}}</h5>
+          <a href="{{Source}}" class="company--link" target="_blank">🔗</a>
+
+           <span class="tag--remote">{{Location}}</span><span class="tag--size">{{Size}}</span>
+
+          </div>
+
+          <div class="columns column col-xl-12 bottom-row"> 
+
+              <div class="col-xs-4"><%= image_tag('race-46x46.png', size: '20') %></span><span class="company--score">{{Diversity Score}}</span></div>  
+
+            <div class="col-xs-4"><%= image_tag('gender-46x46.png', size: '20') %><span class="company--score" style="color: #ffdd87;">{{Gender Score}}</span></div> 
+
+            <div class="col-xs-4"><%= image_tag('race-02-46x46.png', size: '20') %></span><span class="company--score" style="color: #ffdd87;">{{Race Score}}</span></div> 
+
+
+
+          </div>
+
+        </div>
+
+
+</div>
+
+
+
+
+
+      </div>     
+    </div>
+
+    <!--
+
+
   <div class="columns company--section" sheetsu='https://sheetsu.com/apis/v1.0/73162961a1d4' sheetsu-sheet="Value">
 
-        <div class="column col-xl-3 col-lg-4 col-md-6 col-xs-12 company--profile">   
+        <div class="column col-xl-4 col-lg-4 col-md-6 col-xs-12 company--profile">   
           <div class="company--profile--card">
-            <!--<img src="//logo.clearbit.com/{{b}}?size=19" class="logo"> -->
+          
             <h5 class="company--title">{{Company}}</h5>
             <a href="{{Source}}" class="company--link" target="_blank">🔗</a>
             <p class="company--rank">#{{Ranking}}</p>
@@ -55,7 +126,7 @@ function change() {
       </div> 
 
   </div>
-
+-->
 
 
 </div>
